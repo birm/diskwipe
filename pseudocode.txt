@@ -1,0 +1,74 @@
+Linux enviornment; minimalist, can recognize discs, has DD, nogui.
+
+PSEUDO CODE: DRIVE WIPER
+
+Matt Lamport and Ryan Birmingham
+
+Iteration Counting
+
+(2x)+1; x=iteration count
+
+Wiping
+
+dd @ 1
+
+dd@ 0
+
+dd @randint
+
+Finishing – text
+
+Clone one hard drive onto another
+
+$ dd if=/dev/sda of=/dev/sdb
+______________________________
+
+Read disccount
+
+echo -e How many iterations?
+
+Read iterationcount
+
+if [ 0 < iterationcount ]
+
+$ dd if=/home/disc/one of=/dev/hda bs=1M
+
+$ dd if=/dev/zero of=/dev/hda bs=1M
+
+$ dd if=/dev/random of=/dev/hda bs=1M
+
+fi
+
+if [ 1 < iterationcount ]
+
+$ dd if=/home/disc/one of=/dev/hdb bs=1M
+
+$ dd if=/dev/zero of=/dev/hdb bs=1M
+
+$ dd if=/dev/random of=/dev/hdd bs=1M
+
+fi
+
+if [ 2 < iterationcount ]
+
+$ dd if=/home/disc/one of=/dev/hdc bs=1M
+
+$ dd if=/dev/zero of=/dev/hdc bs=1M
+
+$ dd if=/dev/random of=/dev/hdc bs=1M
+
+fi
+
+if [ 3 < iterationcount ]
+
+$ dd if=/home/disc/one of=/dev/hdd bs=1M
+
+$ dd if=/dev/zero of=/dev/hdd bs=1M
+
+$ dd if=/dev/random of=/dev/hdd bs=1M
+
+fi
+
+if e=d
+
+print (done all)
